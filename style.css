@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #FEFCF3;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+a{
+    text-decoration: none;
+}
+.main-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* button */
+.btn{
+    padding: 1rem 1.5rem;
+    background: #DBA39A;
+    border: 1.5px solid #DBA39A;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #F0DBDB;
+    color: #DBA39A;
+    border: 1.5px solid #F0DBDB;
+}
+
+/* title */
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: gray;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.pre-title::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan navbar menu */
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F5EBE0;
+    z-index: 1000;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    margin-right: 5rem; 
+}
+
+.nav a {
+    text-decoration: none;
+    color: #DBA39A;
+}
+.nav a:hover{
+    color: #F0DBDB;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.logo a{
+    color: #DBA39A;
+}
+nav ul li a{
+    color: #DBA39A;
+}
+
+/* home selection */
+#home{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.home-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: #DBA39A;
+}
+.home-right img{
+    margin-left: 80px;
+    width: 450px;
+    border-radius: 0.7rem;
+}
+
+/* learn Section */
+#learn{
+    background-color: #F0DBDB;
+    padding: 6rem 0;
+}
+.section-title-learn{
+    text-align: center;
+    margin: 1rem 0 4rem;
+    color: #DBA39A;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* layout */
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+.learn{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #DBA39A;
+    border-radius: 0.7rem;
+}
+.learn:hover{
+    background-color: #F0DBDB;
+    box-shadow: 0px 3px 13px 3px #888888;
+    color: #DBA39A;
+}
+.learn h4{
+    color: white;
+    margin: 0.5rem 0;
+}
+.learn p{
+    color: white;
+}
+.learn:hover h4,
+.learn:hover p {
+    color: #DBA39A; /* Atur warna teks saat dihover */
+}
+
+/* skills & experience */
+#skills{
+    padding: 6rem 0;
+    background: #FEECE2;
+}
+.section-title-skills{
+    text-align: center;
+    margin: 1rem 0 4rem;
+    color: #DBA39A;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 4rem;
+}
+.experience{
+    display: flex;
+    gap: 2rem;
+}
+.experience line{
+    padding: 0 0.7rem;
+}
+.experience .line div{
+    width: 2px;
+    height: 100%;
+    background: #DBA39A;
+    position: relative;
+}
+.experience-info{
+    margin: 0.3rem 0;
+}
+.experience-title{
+    color: #DBA39A;
+}
+.experience-date{
+    margin-bottom: 3rem;
+}
+.experience .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #DBA39A;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+.skills-right{
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+/* contact */
+#contact{
+    padding: 6rem;
+}
+#contact h1{
+    color: #DBA39A;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.contact-form div{
+    margin-bottom: 1.4rem;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #DBA39A;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: none;
+    border: 1px solid gray;
+}
+.btn-submit{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #DBA39A;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn-submit:hover{
+    background-color: #F0DBDB;
+    color: #DBA39A;
+    border: 1.5px solid #F0DBDB;
+}
+
+
+/* footer */
+footer{
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: #DBA39A;
+    text-align: center;
+}
+.footer-icons{
+    margin-bottom: 1rem;
+}
+.footer-icons a{
+    margin: 0 0.5rem;
+}
+.footer-icons a:hover{
+    fill: grey;
+}
+.footer-icons{
+    fill: gray;
+}
